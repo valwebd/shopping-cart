@@ -28,8 +28,6 @@ const Context = ({ children }) => {
     searchQuery: '',
   });
 
-  console.log(productState);
-
   return (
     <Cart.Provider value={{ state, dispatch, productState, productDispatch }}>
       {children}
